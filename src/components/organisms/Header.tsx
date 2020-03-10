@@ -9,7 +9,11 @@ const Header: React.FC = () => (
     <div className="Header__searchForm">
       <SearchForm />
     </div>
-    <img className="Header__logo" src={Logo} />
+    <img
+      className="Header__logo"
+      src={Logo}
+      alt="ロゴ"
+    />
     <div className="Header__registerButton">
       <RegisterButton />
     </div>
