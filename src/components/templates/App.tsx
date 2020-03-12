@@ -5,6 +5,7 @@ import CatchPhrase from '../molecules/CatchPhrase';
 import RecommendCards from '../organisms/RecommendCards';
 import SideNav from '../organisms/SideNav';
 import ArticleListItem from '../organisms/ArticleListItem';
+import Banners from '../atoms/banners.png';
 import './App.sass';
 
 type Props = {
@@ -36,6 +37,7 @@ const App: React.FC<Props> = ({ recommends, articles }) => (
         }
       </div>
       <div className="App__information">
+        <img src={Banners} />
       </div>
     </div>
   </div>

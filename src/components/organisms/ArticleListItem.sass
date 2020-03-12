@@ -6,7 +6,7 @@
 
   &__thumbnail
     position: relative
-    width: 120px // 元画像の縦横が120x120になっている
+    width: 18%
     height: 100%
 
     img
@@ -14,7 +14,7 @@
 
   &__information
     position: relative
-    width: calc(100% - 120px)
+    width: 82%
     height: 100%
     padding: 0 2%
     box-sizing: border-box
@@ -53,7 +53,7 @@
     position: relative
     width: auto
     height: 100%
-    padding-right: calc(#{$subInformationPadding} + 1.5%)
+    padding-right: calc(#{$subInformationPadding})
 
   &__viewsStrong
     font-weight: bold
@@ -62,8 +62,16 @@
   &__category
     position: relative
     width: auto
-    border-left: 1px gray solid
     padding-left: $subInformationPadding
+
+    &:before
+      content: ''
+      position: absolute
+      top: 10%
+      left: 0
+      width: 1px
+      height: 65%
+      background-color: #E6E6E6
 
   &__tag
     display: inline-block
