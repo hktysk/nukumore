@@ -53,7 +53,7 @@
     position: relative
     width: auto
     height: 100%
-    padding-right: calc(#{$subInformationPadding} + 1.5%)
+    padding-right: calc(#{$subInformationPadding})
 
   &__viewsStrong
     font-weight: bold
@@ -62,8 +62,16 @@
   &__category
     position: relative
     width: auto
-    border-left: 1px gray solid
     padding-left: $subInformationPadding
+
+    &:before
+      content: ''
+      position: absolute
+      top: 10%
+      left: 0
+      width: 1px
+      height: 65%
+      background-color: #E6E6E6
 
   &__tag
     display: inline-block
