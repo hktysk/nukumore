@@ -6,7 +6,9 @@ import RecommendCards from '../organisms/RecommendCards';
 import SideNav from '../organisms/SideNav';
 import ArticleListItem from '../organisms/ArticleListItem';
 import Banners from '../atoms/banners.png';
+import Footer from '../organisms/Footer';
 import './App.sass';
+import './App.media.sass';
 
 type Props = {
   recommends: Recommend[]
@@ -40,6 +42,7 @@ const App: React.FC<Props> = ({ recommends, articles }) => (
         <img src={Banners} />
       </div>
     </div>
+    <Footer />
   </div>
 );
 
