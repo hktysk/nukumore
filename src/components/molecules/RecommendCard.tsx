@@ -1,6 +1,7 @@
 import React from 'react';
 import { Recommend } from '../../types';
 import './RecommendCard.sass';
+import './RecommendCard.media.sass';
 
 const RecommendCard: React.FC<Recommend> = ({ title, category, thumbnail }) => (
   <div className="RecommendCard">

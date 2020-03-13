@@ -1,5 +1,6 @@
 import React from 'react';
 import './ArticleListItem.sass';
+import './ArticleListItem.media.sass';
 
 type Props = {
   title: string
