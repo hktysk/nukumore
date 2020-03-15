@@ -1,0 +1,49 @@
+.App
+
+  &__catchPhrase
+    width: 100%
+    height: 2.55vw
+
+  &__recommends
+    position: relative
+    width: 100%
+    height: 25vw
+    background-color: #F1F1F1
+    margin: 0 auto 20px
+
+  &__main
+    position: relative
+    width: 90%
+    height: auto
+    display: flex
+    margin: 0 auto
+
+  &__sideNav
+    position: relative
+    width: calc(100% / 7.5)
+
+  &__articles
+    position: relative
+    width: calc((100% / 7.5) * 4.5)
+    padding: 0 1.5%
+    box-sizing: border-box
+
+  &__information
+    position: relative
+    width: calc((100% / 7.5) * 2)
+
+    img
+      width: 100%
+
+  &__articleListItem
+    position: relative
+    width: 100%
+    height: auto
+    border-bottom: 1px solid #EEE
+    padding: 16px 0
+
+    &:first-child
+      padding-top: 0
+
+    &:last-child
+      border: none
