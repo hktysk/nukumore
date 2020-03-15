@@ -1,0 +1,126 @@
+.Article
+
+  &__catchPhrase
+    width: 100%
+    height: 2.55vw
+
+  &__breadcrumb
+    width: 90%
+    height: auto
+    color: #9a9a9a
+    font-size: 0.9vw
+    margin: 10px auto 40px
+
+  &__main
+    position: relative
+    width: 90%
+    display: flex
+    margin: 0 auto
+
+  &__content
+    position: relative
+    width: 72%
+
+  &__subInformation
+    position: relative
+    width: 100%
+    height: 1vw
+    margin-bottom: 20px
+
+  &__date, &__tag
+    position: absolute
+    top: 0
+    color: #9A9A9A
+    font-size: 1vw
+
+  &__date
+    left: 0
+
+  &__tag
+    right: 0
+
+  &__information
+    width: 100%
+    height: auto
+    display: flex
+
+  &__informationThumbnail
+    position: relative
+    width: 16%
+    height: auto
+
+    &:nth-of-type(2)
+      display: none
+
+  &__informationInline
+    position: relative
+    width: 84%
+    height: auto
+    padding-left: 2%
+    box-sizing: border-box
+
+  &__title
+    position: relative
+    color: #545454
+    font-size: 2vw
+    line-height: 1.3
+
+  &__description
+    position: absolute
+    bottom: 0
+    left: 0
+    color: #5D5D5D
+    font-size: 1.1vw
+    line-height: 1.5
+    border: 2px #e6e6e6 dashed
+    padding: 1%
+    box-sizing: border-box
+    margin: 0 2%
+
+    .material-icons
+      font-size: 1.2vw
+      color: #B1E5FF
+      font-weight: bold
+      margin-right: 0.5%
+
+  &__btnSpace
+    position: relative
+    width: 100%
+    height: 2.6vw
+    display: flex
+    justify-content: flex-end
+    margin: 20px 0
+
+  &__share
+    position: absolute
+    top: 0
+    left: 0
+    width: 82%
+    height: 100%
+    display: flex
+
+    img
+      width: 5%
+      transform: scale(0.85)
+      margin: 0 0.2%
+
+  &__favorite
+    position: relative
+    width: 18%
+    height: 100%
+    color: #797979
+    font-size: 1vw
+    display: flex
+    justify-content: center
+    align-items: center
+    border: 1.5px #B9B9B9 solid
+    border-radius: 4px
+
+    .material-icons
+      color: #8E8E8E
+      font-size: 1.6vw
+      margin-right: 2%
+
+  &__banners
+    position: relative
+    width: 28%
