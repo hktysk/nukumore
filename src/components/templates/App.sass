@@ -1,49 +1,81 @@
 .App
 
-  &__catchPhrase
-    width: 100%
-    height: 2.55vw
-
   &__recommends
     position: relative
-    width: 100%
-    height: 25vw
-    background-color: #F1F1F1
-    margin: 0 auto 20px
+    width: 90%
+    height: 28vw
+    display: flex
+    align-items: center
+    margin: 1vw auto 4.7vw
+
+  &__hotTopic
+    position: relative
+    width: 40%
+    height: 100%
+
+    img
+      width: 100%
+      height: 100%
+      object-fit: cover
+
+  &__hotTopicTitle
+    position: absolute
+    bottom: 0
+    left: 5%
+    width: 90%
+    height: 16%
+    color: #444141
+    font-size: 1.4vw
+    font-weight: bold
+    text-align: center
+    background-color: white
+    display: flex
+    justify-content: center
+    align-items: center
+    transform: translateY(50%)
+
+  &__hotTopicTitleName
+    display: inline-block
+    color: #BBB
+    margin-bottom: 0.5%
+
+  &__hotCardsSpace
+    position: relative
+    width: 60%
+    height: 100%
+    display: flex
+    justify-content: space-around
+    flex-wrap: wrap
+    padding: 0 0.4%
+    box-sizing: border-box
+
+  &__hotCard
+    position: relative
+    width: 50%
+    height: calc(100% / 3)
+    margin-bottom: 1%
 
   &__main
     position: relative
     width: 90%
     height: auto
-    display: flex
     margin: 0 auto
 
-  &__sideNav
-    position: relative
-    width: calc(100% / 7.5)
-
-  &__articles
-    position: relative
-    width: calc((100% / 7.5) * 4.5)
-    padding: 0 1.5%
-    box-sizing: border-box
-
-  &__information
-    position: relative
-    width: calc((100% / 7.5) * 2)
-
-    img
-      width: 100%
-
-  &__articleListItem
+  &__books, &__banners
     position: relative
     width: 100%
     height: auto
-    border-bottom: 1px solid #EEE
-    padding: 16px 0
+    margin: 8vw 0 4vw
 
-    &:first-child
-      padding-top: 0
+  &__banners
+    margin-top: 0
 
-    &:last-child
-      border: none
+  &__ranks
+    position: relative
+    width: 100%
+    height: 40vw
+    display: flex
+    margin-bottom: 4vw
+
+  &__newArticles
+    margin-bottom: 4vw

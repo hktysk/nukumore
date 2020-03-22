@@ -8,19 +8,21 @@ import './Header.media.sass';
 
 const Header: React.FC = () => (
   <header className="Header">
-    <div className="Header__hamburgerMenu">
-      <HamburgarMenu />
-    </div>
-    <div className="Header__searchForm">
-      <SearchForm />
-    </div>
-    <img
-      className="Header__logo"
-      src={Logo}
-      alt="ロゴ"
-    />
-    <div className="Header__registerButton">
-      <RegisterButton />
+    <div className="Header__inline">
+      <div className="Header__hamburgerMenu">
+        <HamburgarMenu />
+      </div>
+      <div className="Header__searchForm">
+        <SearchForm />
+      </div>
+      <img
+        className="Header__logo"
+        src={Logo}
+        alt="ロゴ"
+      />
+      <div className="Header__registerButton">
+        <RegisterButton />
+      </div>
     </div>
   </header>
 );
