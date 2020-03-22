@@ -1,0 +1,65 @@
+.Books
+  position: relative
+  width: 100%
+  height: auto
+  display: flex
+  justify-content: center
+  align-items: center
+
+  &__title
+    position: absolute
+    top: 0
+    left: 0
+    color: #FFB48F
+    font-size: 1.6vw
+    font-weight: bold
+    letter-spacing: .5vw
+    white-space: nowrap
+    background-color: rgba(255, 255, 255, .3)
+    border: .2vw #FFB48F solid
+    padding: .7% 3%
+    display: flex
+    align-items: flex-end
+    transform: translateY(-80%)
+    z-index: 10
+
+    .material-icons
+      position: relative
+      font-size: 2vw
+      margin-right: 5%
+      transform: translateY(6%)
+
+    &:nth-of-type(2)
+      color: transparent
+      transform: translateY(-64%) translateX(4%)
+      z-index: 8
+
+  &__arrow
+    position: absolute
+    width: 1.5vw
+    height: 1.5vw
+    transform: rotateZ(45deg)
+
+    $border: 4px #D0D0D0 solid
+    &--left
+      left: 0
+      border-bottom: $border
+      border-left: $border
+
+    &--right
+      right: 0
+      border-top: $border
+      border-right: $border
+
+  &__inline
+    position: relative
+    width: 90%
+    height: auto
+
+    img
+      width: calc((100% - 3%) / 7)
+      height: auto
+      margin-right: 0.5%
+
+      &:last-child
+        margin-right: 0
