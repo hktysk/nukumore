@@ -22,11 +22,11 @@ const App: React.FC<Props> = ({ recommends, articles }) => (
     <Header />
     <div className="App__recommends">
       <div className="App__hotTopic">
-        <img src="https://nukumore.jp/data/img/articleMainImg/number/1795/82a2ab6891b5981f6cc6bcb41a3466ee.jpeg" />
+        <img src="https://otonano-shumatsu.com/data/img/articleMainImg/number/5523/thumb_lg_mato_osaka_069_image26_1577458270.jpeg" />
         <div className="App__hotTopicTitle">
           <span>
           <span className="App__hotTopicTitleName">Hot Topics</span><br />
-            かぎ針編みの「がまぐちポーチ」の作り方
+            大阪穴場グルメ_江戸時代より伝承のそばを受け
           </span>
         </div>
       </div>
@@ -63,20 +63,20 @@ const App: React.FC<Props> = ({ recommends, articles }) => (
 
       <div className="App__newArticles">
         <NewArticles articles={articles} tags={[
-          '小物入れ',
-          '動物',
-          'うさぎ',
-          'ブレスレット',
-          'ポーチ',
-          'キッズ',
-          '初心者さんにおすすめ簡単レシピ',
-          'ハート',
-          '和風の小物',
-          'カバンの中に入れる小物の作り方',
-          '子どもと遊べる折り紙の作り方',
-          'キャンディ',
-          'バレンタイン',
-          '簡単！ こどもの日の折り紙の折形特集'
+          'テイクアウト',
+          'カニ',
+          'ウニ',
+          '馬肉',
+          '「築地・アメ横・松戸」エビ・カニ三都物語',
+          '秋葉原駅',
+          '真田幸村を食と散策で楽しむ！',
+          'うどん',
+          '上田駅',
+          '築地市場駅',
+          '築地場外市場',
+          'パン',
+          'メタボ',
+          '居酒屋日本シリーズ博多VS広島',
         ]} />
       </div>
 

@@ -25,7 +25,7 @@ const NewArticles: React.FC<Props> = ({ articles, tags }) => (
         <div className="NewArticles__tagsSpace">
           {
             tags.map((v) => (
-              <div className="NewArticles__tag NewArticles__tag--green">
+              <div className="NewArticles__tag NewArticles__tag--red">
                 <i className="material-icons">local_offer</i>
                 <span> </span>
                 { v }

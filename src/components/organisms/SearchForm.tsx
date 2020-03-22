@@ -11,7 +11,7 @@ const SearchForm: React.FC = () => (
     <input
       className="SearchForm__text"
       type="search"
-      placeholder="作りたいレシピをさがす！"
+      placeholder="いま何を食べたい？"
     />
   </form>
 );
