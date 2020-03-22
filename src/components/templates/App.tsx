@@ -22,11 +22,11 @@ const App: React.FC<Props> = ({ recommends, articles }) => (
     <Header />
     <div className="App__recommends">
       <div className="App__hotTopic">
-        <img src="https://nukumore.jp/data/img/articleMainImg/number/866/ecbbc05b940f8f90dd4e8b280a5514fb.jpeg" />
+        <img src="https://nukumore.jp/data/img/articleMainImg/number/1795/82a2ab6891b5981f6cc6bcb41a3466ee.jpeg" />
         <div className="App__hotTopicTitle">
           <span>
           <span className="App__hotTopicTitleName">Hot Topics</span><br />
-            体操着袋（お着替え袋・巾着）の作り方
+            かぎ針編みの「がまぐちポーチ」の作り方
           </span>
         </div>
       </div>
