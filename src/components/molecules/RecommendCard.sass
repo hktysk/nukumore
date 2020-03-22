@@ -2,22 +2,56 @@
   position: relative
   width: 100%
   height: 100%
+  display: flex
   overflow: hidden
 
   &__thumbnail
-    width: 100%
-    height: 76%
+    width: 36%
+    height: 100%
     object-fit: cover
 
+  &__information
+    position: relative
+    width: 64%
+    height: 100%
+    padding: 0 1% 0 1.5%
+    box-sizing: border-box
+
   &__title
+    height: 35%
     color: #312F2F
-    font-size: 1.2vw
-    line-height: 120%
-    margin: 7px 0
+    font-size: 1.1vw
+    line-height: 1.4
+    display: -webkit-box
+    -webkit-line-clamp: 2
+    -webkit-box-orient: vertical
+    margin-bottom: 1%
+    overflow: hidden
+
+  &__views
+    color: #888
+    font-size: 0.8vw
+
+    b
+      font-size: 0.85vw
 
   &__category
     position: absolute
     bottom: 0
-    left: 0
-    color: #666
-    font-size: 0.9vw
+    left: 1.5%
+    color: white
+    font-size: 0.85vw
+    white-space: nowrap
+    background-color: #55BF98
+    border-radius: 4px
+    padding: 2% 4%
+    display: inline-block
+
+    .material-icons
+      position: relative
+      font-size: 0.8vw
+      margin-right: 0.3vw
+      transform: translateY(4.5%)
+
+_::-webkit-full-page-media, _:future, :root .RecommendCard__category .material-icons
+  font-size: 0.85vw

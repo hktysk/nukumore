@@ -1,0 +1,69 @@
+.RankingListItem
+  position: relative
+  width: 100%
+  height: 100%
+  display: flex
+
+  &__rank
+    position: absolute
+    bottom: 0
+    right: 5%
+    font-size: 3.5vw
+    font-weight: bold
+    color: #D6D6D6
+
+  &__thumbnail
+    position: relative
+    width: 22.5%
+    height: 100%
+    border-radius: 100%
+    object-fit: cover
+
+  &__information
+    position: relative
+    width: 77.5%
+    height: 100%
+    padding: 0 2%
+    box-sizing: border-box
+
+  &__title
+    position: relative
+    width: 100%
+    height: auto
+    color: #2F2F2F
+    font-size: 1.1vw
+    margin-bottom: 3%
+
+  &__subInformation
+    position: relative
+    width: 100%
+    height: 15%
+    display: flex
+    color: #717171
+    font-size: 0.8vw
+    margin: 2% 0 4.5%
+
+  $subInformationPadding: .75vw
+  &__views
+    position: relative
+    width: auto
+    height: 100%
+    padding-right: calc(#{$subInformationPadding})
+
+  &__viewsStrong
+    font-weight: bold
+    margin-right: 7%
+
+  &__category
+    position: relative
+    width: auto
+    padding-left: $subInformationPadding
+
+    &:before
+      content: ''
+      position: absolute
+      top: 10%
+      left: 0
+      width: 0
+      height: 65%
+      border-right: 1px #E6E6E6 solid

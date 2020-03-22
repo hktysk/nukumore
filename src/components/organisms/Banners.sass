@@ -1,0 +1,39 @@
+.Banners
+  position: relative
+  width: 100%
+  height: auto
+  display: flex
+  justify-content: center
+  align-items: center
+
+  &__arrow
+    position: absolute
+    width: 1.5vw
+    height: 1.5vw
+    transform: rotateZ(45deg)
+
+    $border: 4px #D0D0D0 solid
+    &--left
+      left: 0
+      border-bottom: $border
+      border-left: $border
+
+    &--right
+      right: 0
+      border-top: $border
+      border-right: $border
+
+  &__inline
+    position: relative
+    width: 90%
+    height: auto
+    display: flex
+    align-items: center
+
+    img
+      width: calc((100% - 8%) / 4)
+      height: auto
+      margin-right: 2%
+
+      &:last-child
+        margin-right: 0
